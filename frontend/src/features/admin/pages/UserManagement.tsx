@@ -206,7 +206,7 @@ const UserManagement = () => {
                     {user.is_active ? "Active" : "Inactive"}
                   </span>
                 </td>
-                <td>{new Date(user.created_at).toLocaleDateString()}</td>
+                <td>{user.created_at ? new Date(user.created_at).toLocaleDateString() : "N/A"}</td>
                 <td>
                   <div className="action-buttons">
                     <Button

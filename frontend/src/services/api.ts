@@ -157,7 +157,12 @@ export const adminAPI = {
   getAllUsers: async () => {
     const { data, error } = await supabase.from("profiles").select("*");
     if (error) throw error;
-    return { users: data };
+    // Map 'name' to 'full_name' for UI compatibility
+    const users = data.map((u: any) => ({
+      ...u,
+      full_name: u.name
+    }));
+    return { users };
   },
 
   updateUserStatus: async (userId: string, updates: any) => {
@@ -175,11 +180,31 @@ export const adminAPI = {
   },
 
   getAnalytics: async () => {
-    const { count: totalUsers } = await supabase.from("profiles").select("*", { count: 'exact', head: true });
-    const { count: totalCenters } = await supabase.from("screening_centers").select("*", { count: 'exact', head: true });
-    const { count: totalChats } = await supabase.from("chat_nodes").select("*", { count: 'exact', head: true });
-    const { count: totalQuizzes } = await supabase.from("quizzes").select("*", { count: 'exact', head: true });
+    // 1. Get total users count from profiles
+    const { count: totalUsers } = await supabase
+      .from("profiles")
+      .select("*", { count: 'exact', head: true });
+
+    // 2. Get counts of shared resources
+    const { count: totalCenters } = await supabase
+      .from("screening_centers")
+      .select("*", { count: 'exact', head: true });
     
+    // 3. Get total chat nodes across all types/langs
+    const { count: totalChats } = await supabase
+      .from("chat_nodes")
+      .select("*", { count: 'exact', head: true });
+    
+    // 4. Get active engagement (users with progress records)
+    const { count: totalProgress } = await supabase
+      .from("user_progress")
+      .select("*", { count: 'exact', head: true });
+
+    // 5. Quiz completion stats
+    const { count: totalQuizzes } = await supabase
+      .from("user_quiz_scores")
+      .select("*", { count: 'exact', head: true });
+
     return {
       overview: {
         totalUsers: totalUsers || 0,
@@ -188,10 +213,13 @@ export const adminAPI = {
       },
       users: {
         recentRegistrations: totalUsers || 0,
+        engagedUsers: totalProgress || 0,
       },
       engagement: {
-        quizCompletions: { total: totalQuizzes || 0 },
-        chatCompletions: 0,
+        quizCompletions: { 
+          total: totalQuizzes || 0 
+        },
+        chatInteractions: totalProgress || 0,
       }
     };
   },
