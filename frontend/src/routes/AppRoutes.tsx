@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import WelcomeScreen from "../features/welcome/WelcomeScreen";
 import Login from "../features/auth/Login";
 import Signup from "../features/auth/Signup";
+import AuthCallback from "../features/auth/AuthCallback";
 import AwarenessHome from "../features/awareness-hub/pages/AwarenessHome";
 import LanguageSelect from "../features/awareness-hub/pages/LanguageSelect";
 import ChatScreen from "../features/awareness-hub/pages/ChatScreen";
@@ -38,6 +39,7 @@ export default function AppRoutes() {
       <Route path="/" element={<WelcomeScreen />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/auth/callback" element={<AuthCallback />} />
       <Route path="/home" element={<AwarenessHome />} />
       <Route path="/language/:cancerType" element={<LanguageSelect />} />
       <Route path="/chat/:cancerType/:lang" element={<ChatScreen />} />
