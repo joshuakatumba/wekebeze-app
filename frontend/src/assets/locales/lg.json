@@ -1,0 +1,18 @@
+{
+  "select_language": {
+    "title": "Londa olulimi:",
+    "en": "English",
+    "lg": "Luganda",
+    "back": "Dda ku Cancer Types"
+  },
+  "actions": {
+    "back": "Okuddayo",
+    "restart": "Okutandika obuto.",
+    "export": "Funa chat"
+  },
+  "cancers": {
+    "cervical": { "title": "Kkookolo w'omumwa gwa nnabaana." },
+    "breast": { "title": "Kkookolo w'amabeere" },
+    "screening_locator": { "title": "Ekisenge ky'okusuzuma" }
+  }
+}

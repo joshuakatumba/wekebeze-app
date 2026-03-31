@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "welcome",
+      "start": true,
+      "text": "Nkulamusizza! Nze Dr. Smith, omusawo wo ku cancer awareness. Nkuyamba atya leero?",
+      "options": [
+        { "text": "Ebikolebwa bya breast cancer bittya?", "next": "signs" },
+        { "text": "Nkusuzuma breast cancer atya?", "next": "screening" },
+        {
+          "text": "Ebikwata ku risk factors bya breast cancer bittya?",
+          "next": "risk_factors"
+        },
+        { "text": "Obujjanjabi bwa breast cancer butya?", "next": "treatment" },
+        { "text": "Nsanga obuyambi ne resources wa?", "next": "resources" }
+      ]
+    },
+    {
+      "id": "signs",
+      "text": "Nga omusawo, nkubuuza nti ebikolebwa ebya breast cancer birimu okukuluufu oba okuba n'ekibala mu kifuba, okutondawo mu kukyusa obulamu bw'ekifuba, obuzza obw'ekikugu ku nkoko, oba discharge okuva mu nipple. Wadde kyokka, tebuli kibala kiba cancer, kyandibadde kirungi okwogera ne kliniki bw'oba olaba ekitundu kyonna ekikyuse.",
+      "options": [
+        { "text": "Nkusuzza nze atya?", "next": "self_check" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "self_check",
+      "text": "Okukola breast self-examination, yimirira mu maaso ga miririro olabe ebitundu ebikyuse mu kukyusa obulamu oba enkoko. Oluvannyuma, vinaamu era kozesa amalala go okunoonya ebibala, otandike okuva mu bitundu ebiri ebweru n'ogende mu maaso. Kola kino buli mwezi, era bw'oba olaba ekitundu kyonna ekikyuse, laba omusawo wo amangu.",
+      "options": [
+        { "text": "Nsanga awantu okukolwa?", "next": "resources" },
+        { "text": "Dda", "next": "signs" }
+      ]
+    },
+    {
+      "id": "risk_factors",
+      "text": "Ebikwata ku risk factors bya breast cancer birimu okuba mukazi, okuba omukulu, ebyafa ku muryango gwa breast cancer, obutonde bwa genes ezimu, okufuna menstruation mangu oba okulekerawo mangu, hormone replacement therapy, ne bintu by'obulamu nga okunywa omwenge. Jjukira nti okuba n'ebitundu ebyo tekitegeeza nti ojja kufuna cancer.",
+      "options": [
+        { "text": "Nkusengeka breast cancer atya?", "next": "prevention" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "prevention",
+      "text": "Enkola z'okukendeeza zirimu okuba n'obulamu obulungi, okukola exercise buli lunaku, okugabanya okunywa omwenge, okuleka okunywa siga, ne kumanya ebyafa ku muryango go. Okusuzuma buli kiseera ne self-checks nazo zikulu nnyo ku kuzuula mangu, ekyo kiyamba nnyo mu kuwonawo.",
+      "options": [
+        { "text": "Nnyongera okumanya ku screening", "next": "screening" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "screening",
+      "text": "Okusuzuma breast cancer kusobola okuba nga clinical breast exams omusawo gwe akukola ne mammography. Obungi bw'okusuzuma businga ku myaka gyo ne risk factors zo—nga bwe kiba ku myaka 40-50. Wogera ne biragiro by'ebyobulamu by'eggwanga lyo oba kliniki yo ku advice eyenkula.",
+      "options": [
+        { "text": "Nsanga awantu okukolwa?", "next": "resources" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "treatment",
+      "text": "Obujjanjabi bwa breast cancer businza ku stage ne type, naye busobola okuba nga surgery (lumpectomy oba mastectomy), radiation therapy, chemotherapy, hormone therapy, oba targeted therapies. Ebiragiro by'obujjanjabi bifaanana ku patient, n'olwekyo wogera ne oncologist wo ku ngeri ez'okulonda.",
+      "options": [
+        { "text": "Kiki ku buyambi ku side effects?", "next": "support" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "support",
+      "text": "Okulonda side effects ne recovery kirungi nnyo. Obuyambi busobola okuba nga counseling, support groups, physical therapy, ne eddagala ku symptoms. Ebiseera ebisingawo hospitals zina survivorship programs. Totya kubuuzanga healthcare team yo ku resources.",
+      "options": [
+        { "text": "Nsanga resources ne clinics wa?", "next": "resources" },
+        { "text": "Dda", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "resources",
+      "text": "Ku screening, treatment, ne support, londa kliniki ey'ebyobulamu oba hospital ey'eri. Ebikolwa bya community, cancer societies, ne NGOs bisingawo okuwa services za free oba za cheap, awareness camps, ne counseling.",
+      "options": [{ "text": "Dda ku ntandikwa", "next": "welcome" }]
+    }
+  ]
+}

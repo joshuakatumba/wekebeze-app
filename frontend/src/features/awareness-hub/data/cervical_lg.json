@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "welcome",
+      "start": true,
+      "text": "Yimirira ku Cervical cancer. Nnyinza okukuyamba otya?",
+      "options": [
+        { "text": "Ebinywa (Symptoms)", "next": "symptoms" },
+        { "text": "Okukendeeza & Vaccination", "next": "prevention" },
+        { "text": "Ebikwata ku risk (Risk factors)", "next": "risk_factors" },
+        { "text": "Okusuzuma (Screening)", "next": "screening" },
+        { "text": "Obujjanjabi (Treatment)", "next": "treatment" },
+        { "text": "Ebyapa by'obuyambi (Resources)", "next": "resources" }
+      ]
+    },
+    {
+      "id": "symptoms",
+      "text": "Ebikolebwa bisobola okuba: okwawukira okw'enjawulo mu mwezi, obulumi mu ddovu, oba discharge etali ya busa. Mu kaseera akasinga, tewali bimala ku mulamwa.",
+      "options": [
+        { "text": "Kiki ekisobola okukola?", "next": "causes" },
+        { "text": "Okusuzuma", "next": "screening" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "causes",
+      "text": "Obukolwa bungi buvudde ku HPV (human papillomavirus) era bwetegereza obutonotono obulina bwe bukyaliwo.",
+      "options": [
+        { "text": "Ebikwata ku risk", "next": "risk_factors" },
+        { "text": "Dda", "next": "symptoms" }
+      ]
+    },
+    {
+      "id": "risk_factors",
+      "text": "Eby'okulukusa risk by'amanyi: okuyitamu okugezaako mu bugya obungi, okunywa sigareeti, okuba n'obusungu mu mubiri, n'okutabadde okusuzumibwa.",
+      "options": [
+        { "text": "Okukendeeza", "next": "prevention" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "prevention",
+      "text": "Okukendeeza: HPV vaccine, okusuzumibwa obutereevu (Pap smear/HPV test), n'obujulizi ku by'obulamu obulamu obulungi.",
+      "options": [
+        { "text": "Awantu aw'obukozesa?", "next": "resources" },
+        { "text": "Okusuzuma buli lunnaku?", "next": "screening" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "screening",
+      "text": "Okusuzuma kusaanya obubonero bw'amasanyalaze ku zingaala zangye. Gabana n'ekwata ku kliniki yo ku eby'obulamu ebikulu ku ngeri gye balaga.",
+      "options": [
+        { "text": "Buli lunnaku?", "next": "screening_frequency" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "screening_frequency",
+      "text": "Obusobozi bw'okusuzuma buva ku myaka n'ebifo; jjukira okwogera ne kliniki yaabwe oba okuva ku gavumenti y'eggwanga.",
+      "options": [
+        { "text": "Ebyapa by'obuyambi", "next": "resources" },
+        { "text": "Dda", "next": "screening" }
+      ]
+    },
+    {
+      "id": "treatment",
+      "text": "Obujjanjabi buyinza okuba kw'ogw'obukadde obuto okusinga okulambulula, oba obujjanjabi obw'amaanyi ng'okutwala ensawo, radiotherapy n'ebirala.",
+      "options": [
+        { "text": "Obuyambi n'ensonga", "next": "support" },
+        { "text": "Dda", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "support",
+      "text": "Obuyambi nga counseling, amaka ga patient, ne social services byetaaga okukolagana mu kutegeera n'okukolera wansi w'obujjanjabi.",
+      "options": [
+        { "text": "Ebyapa", "next": "resources" },
+        { "text": "Dda", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "resources",
+      "text": "Londa kliniki y'eby'obulamu eyaffe oba obuyambi bwa NGO ez'okusuzuma ne vaccination. Basobola okukuyamba mu kusaba obujjanjabi.",
+      "options": [{ "text": "Dda (Back)", "next": "welcome" }]
+    }
+  ]
+}

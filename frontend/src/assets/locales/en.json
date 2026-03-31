@@ -1,0 +1,14 @@
+{
+  "select_language": {
+    "title": "Choose a language:",
+    "en": "English",
+    "lg": "Luganda",
+    "back": "Back to Cancer Types"
+  },
+  "actions": { "back": "Back", "restart": "Restart", "export": "Export Chat" },
+  "cancers": {
+    "cervical": { "title": "Cervical Cancer" },
+    "breast": { "title": "Breast Cancer" },
+    "screening_locator": { "title": "Screening Center Locator" }
+  }
+}

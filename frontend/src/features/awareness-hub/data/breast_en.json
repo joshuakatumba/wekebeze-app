@@ -1,0 +1,100 @@
+{
+  "nodes": [
+    {
+      "id": "awareness_question",
+      "start": true,
+      "text": "Have you heard about Breast Cancer?",
+      "options": [
+        { "text": "Yes", "next": "heard_yes" },
+        { "text": "No", "next": "heard_no" }
+      ]
+    },
+    {
+      "id": "heard_yes",
+      "text": "Great! Since you're already familiar with Breast Cancer, let's dive deeper into some key aspects. Here's an infographic to refresh your knowledge.",
+      "image": "breast.jpg",
+      "options": [
+        { "text": "What are the signs and symptoms?", "next": "signs" },
+        { "text": "How can I screen for it?", "next": "screening" },
+        { "text": "What are the risk factors?", "next": "risk_factors" },
+        { "text": "Tell me about treatment options", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "heard_no",
+      "text": "No problem at all! Breast Cancer is an important topic to learn about. Let me share some essential information to help you understand it better. Here's an infographic to get started.",
+      "image": "breast.jpg",
+      "options": [
+        { "text": "What are the signs and symptoms?", "next": "signs" },
+        { "text": "How can I screen for it?", "next": "screening" },
+        { "text": "What are the risk factors?", "next": "risk_factors" },
+        { "text": "Tell me about treatment options", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "signs",
+      "text": "As a doctor, I advise that common signs and symptoms of breast cancer include a lump or thickening in the breast, changes in the size or shape of the breast, dimpling of the skin, nipple discharge, or redness. However, not all lumps are cancerous, so it's important to consult a healthcare professional for any changes.",
+      "image": "breast.jpg",
+      "options": [
+        { "text": "How can I perform a self-check?", "next": "self_check" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "self_check",
+      "text": "To perform a breast self-examination, stand in front of a mirror and look for any changes in size, shape, or skin texture. Then, lie down and use your fingers to feel for lumps, starting from the outer areas and moving inward. Do this monthly, and if you notice any changes, see your doctor promptly.",
+      "options": [
+        { "text": "Where can I get screened?", "next": "resources" },
+        { "text": "Go back", "next": "signs" }
+      ]
+    },
+    {
+      "id": "risk_factors",
+      "text": "Risk factors for breast cancer include being female, older age, family history of breast cancer, certain genetic mutations, early menstruation or late menopause, hormone replacement therapy, and lifestyle factors like alcohol consumption. Remember, having risk factors doesn't mean you'll develop cancer.",
+      "options": [
+        { "text": "How can I prevent breast cancer?", "next": "prevention" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "prevention",
+      "text": "Prevention strategies include maintaining a healthy weight, exercising regularly, limiting alcohol, avoiding smoking, and being aware of your family history. Regular screening and self-checks are also crucial for early detection, which greatly improves outcomes.",
+      "options": [
+        { "text": "Tell me more about screening", "next": "screening" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "screening",
+      "text": "Screening for breast cancer typically involves clinical breast exams by a healthcare provider and mammograms. The recommended frequency depends on your age and risk factors—generally starting at age 40-50. Consult your local health guidelines or clinic for personalized advice.",
+      "options": [
+        { "text": "Where can I get screened?", "next": "resources" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "treatment",
+      "text": "Treatment for breast cancer depends on the stage and type but may include surgery (lumpectomy or mastectomy), radiation therapy, chemotherapy, hormone therapy, or targeted therapies. Treatment plans are individualized, so discuss options with your oncologist.",
+      "options": [
+        { "text": "What about support for side effects?", "next": "support" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "support",
+      "text": "Managing side effects and recovery is important. Support can include counseling, support groups, physical therapy, and medications for symptoms. Many hospitals offer survivorship programs. Don't hesitate to ask your healthcare team for resources.",
+      "options": [
+        {
+          "text": "Where can I find resources and clinics?",
+          "next": "resources"
+        },
+        { "text": "Go back", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "resources",
+      "text": "For screening, treatment, and support, contact your nearest health center, hospital, or cancer clinic. Organizations like local NGOs, cancer societies, and community health programs often provide free or low-cost services, awareness camps, and counseling.",
+      "options": [{ "text": "Back to start", "next": "welcome" }]
+    }
+  ]
+}

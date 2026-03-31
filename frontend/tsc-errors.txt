@@ -1,0 +1,325 @@
+src/app.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/app.tsx(4,24): error TS7016: Could not find a declaration file for module './components/common'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/components/common/index.js' implicitly has an 'any' type.
+src/components/awareness/CancerCategoryCard.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/awareness/CancerCategoryCard.tsx(3,30): error TS7016: Could not find a declaration file for module '../../utils/imageUtils'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/utils/imageUtils.js' implicitly has an 'any' type.
+src/components/awareness/CancerCategoryCard.tsx(5,46): error TS7031: Binding element 'type' implicitly has an 'any' type.
+src/components/awareness/CancerCategoryCard.tsx(5,52): error TS7031: Binding element 'title' implicitly has an 'any' type.
+src/components/awareness/CancerCategoryCard.tsx(5,59): error TS7031: Binding element 'img' implicitly has an 'any' type.
+src/components/awareness/CancerCategoryCard.tsx(7,22): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/components/chat/ChatBubble.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/chat/ChatBubble.tsx(4,38): error TS7031: Binding element 'msg' implicitly has an 'any' type.
+src/components/chat/ChatBubble.tsx(4,43): error TS7031: Binding element 'onChoose' implicitly has an 'any' type.
+src/components/chat/ChatBubble.tsx(49,31): error TS7006: Parameter 'option' implicitly has an 'any' type.
+src/components/chat/ChatBubble.tsx(49,39): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+src/components/chat/ChatHeader.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/chat/ChatHeader.tsx(4,38): error TS7031: Binding element 'title' implicitly has an 'any' type.
+src/components/chat/ChatHeader.tsx(4,45): error TS7031: Binding element 'onBack' implicitly has an 'any' type.
+src/components/chat/QuickOptionButtons.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/chat/QuickOptionButtons.tsx(3,60): error TS7031: Binding element 'onChoose' implicitly has an 'any' type.
+src/components/chat/QuickOptionButtons.tsx(10,35): error TS2339: Property 'text' does not exist on type 'never'.
+src/components/chat/QuickOptionButtons.tsx(11,24): error TS2339: Property 'next' does not exist on type 'never'.
+src/components/chat/QuickOptionButtons.tsx(14,14): error TS2339: Property 'text' does not exist on type 'never'.
+src/components/common/Button.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/common/Button.tsx(4,3): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/components/common/Button.tsx(5,3): error TS7031: Binding element 'onClick' implicitly has an 'any' type.
+src/components/common/Button.tsx(9,3): error TS7031: Binding element 'ariaLabel' implicitly has an 'any' type.
+src/components/common/Button.tsx(32,37): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ small: string; medium: string; large: string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ small: string; medium: string; large: string; }'.
+src/components/common/Button.tsx(32,58): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ primary: string; secondary: string; danger: string; warning: string; success: string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ primary: string; secondary: string; danger: string; warning: string; success: string; }'.
+src/components/common/Header.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/components/common/Header.tsx(9,11): error TS2339: Property 'user' does not exist on type 'unknown'.
+src/components/common/Header.tsx(9,17): error TS2339: Property 'isAdmin' does not exist on type 'unknown'.
+src/components/common/Header.tsx(9,26): error TS2339: Property 'logout' does not exist on type 'unknown'.
+src/components/common/Header.tsx(17,26): error TS7006: Parameter 'path' implicitly has an 'any' type.
+src/components/common/Header.tsx(125,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/components/common/Header.tsx(135,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/components/common/Header.tsx(142,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/components/common/Icon.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/components/common/Icon.tsx(2,32): error TS7031: Binding element 'name' implicitly has an 'any' type.
+src/components/common/Icon.tsx(25,8): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ back: Element; }'.
+src/components/common/LoadingSpinner.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/contexts/AuthContext.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/contexts/AuthContext.tsx(2,25): error TS7016: Could not find a declaration file for module '../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(4,21): error TS2554: Expected 1 arguments, but got 0.
+src/contexts/AuthContext.tsx(8,32): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(18,16): error TS7006: Parameter 'response' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(21,17): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(33,25): error TS7006: Parameter 'userData' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(40,39): error TS18046: 'error' is of type 'unknown'.
+src/contexts/AuthContext.tsx(44,24): error TS7006: Parameter 'email' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(44,31): error TS7006: Parameter 'password' implicitly has an 'any' type.
+src/contexts/AuthContext.tsx(51,39): error TS18046: 'error' is of type 'unknown'.
+src/contexts/AuthContext.tsx(61,25): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/AdminDashboard.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/admin/pages/AdminDashboard.tsx(4,21): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/admin/pages/AdminDashboard.tsx(9,11): error TS2339: Property 'user' does not exist on type 'unknown'.
+src/features/admin/pages/AdminDashboard.tsx(25,16): error TS2345: Argument of type '"Failed to load analytics data"' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/admin/pages/AdminDashboard.tsx(59,29): error TS2339: Property 'overview' does not exist on type 'never'.
+src/features/admin/pages/AdminDashboard.tsx(67,29): error TS2339: Property 'users' does not exist on type 'never'.
+src/features/admin/pages/AdminDashboard.tsx(75,29): error TS2339: Property 'overview' does not exist on type 'never'.
+src/features/admin/pages/AdminDashboard.tsx(83,29): error TS2339: Property 'engagement' does not exist on type 'never'.
+src/features/admin/pages/AdminDashboard.tsx(91,29): error TS2339: Property 'overview' does not exist on type 'never'.
+src/features/admin/pages/AdminDashboard.tsx(99,29): error TS2339: Property 'engagement' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/admin/pages/Analytics.tsx(2,21): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/admin/pages/Analytics.tsx(22,16): error TS2345: Argument of type '"Failed to load analytics data"' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/admin/pages/Analytics.tsx(95,24): error TS2353: Object literal may only specify known properties, and '"--percentage"' does not exist in type 'Properties<string | number, string & {}>'.
+src/features/admin/pages/Analytics.tsx(101,24): error TS2353: Object literal may only specify known properties, and '"--percentage"' does not exist in type 'Properties<string | number, string & {}>'.
+src/features/admin/pages/Analytics.tsx(109,44): error TS2339: Property 'quizStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(113,42): error TS2339: Property 'quizStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(123,27): error TS2339: Property 'chatStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(130,29): error TS2339: Property 'chatStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(136,29): error TS2339: Property 'chatStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(148,27): error TS2339: Property 'screeningStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(154,25): error TS2339: Property 'screeningStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(154,62): error TS7006: Parameter 'center' implicitly has an 'any' type.
+src/features/admin/pages/Analytics.tsx(154,70): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/admin/pages/Analytics.tsx(195,31): error TS2339: Property 'contentStats' does not exist on type 'never'.
+src/features/admin/pages/Analytics.tsx(204,31): error TS2339: Property 'contentStats' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/admin/pages/ChatNodeManagement.tsx(2,21): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(37,16): error TS2345: Argument of type '"Failed to load chat nodes"' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/admin/pages/ChatNodeManagement.tsx(44,31): error TS7006: Parameter 'field' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(44,38): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(48,29): error TS7006: Parameter 'field' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(48,36): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(75,25): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(85,31): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(89,46): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(103,23): error TS7006: Parameter 'node' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(120,31): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/features/admin/pages/ChatNodeManagement.tsx(189,10): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ChatNodeManagement.tsx(323,24): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ChatNodeManagement.tsx(334,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ChatNodeManagement.tsx(345,18): error TS2739: Type '{ children: string; type: string; variant: string; }' is missing the following properties from type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }': onClick, ariaLabel
+src/features/admin/pages/ChatNodeManagement.tsx(348,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ChatNodeManagement.tsx(379,29): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(380,27): error TS2339: Property 'cancerType' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(381,27): error TS2339: Property 'language' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(382,27): error TS2339: Property 'nodeId' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(383,27): error TS2339: Property 'nodeData' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(384,49): error TS2339: Property 'nodeData' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(385,27): error TS2339: Property 'nodeData' does not exist on type 'never'.
+src/features/admin/pages/ChatNodeManagement.tsx(388,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ChatNodeManagement.tsx(395,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => Promise<void>; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ChatNodeManagement.tsx(396,56): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/admin/pages/QuizManagement.tsx(2,21): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(31,16): error TS2345: Argument of type '"Failed to load quizzes"' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/admin/pages/QuizManagement.tsx(38,31): error TS7006: Parameter 'field' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(38,38): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(42,29): error TS7006: Parameter 'field' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(42,36): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(50,31): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(50,38): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(63,25): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(74,31): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(78,42): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(92,23): error TS7006: Parameter 'quiz' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(103,31): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/features/admin/pages/QuizManagement.tsx(157,10): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/QuizManagement.tsx(222,24): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/QuizManagement.tsx(233,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/QuizManagement.tsx(251,18): error TS2739: Type '{ children: string; type: string; variant: string; }' is missing the following properties from type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }': onClick, ariaLabel
+src/features/admin/pages/QuizManagement.tsx(254,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/QuizManagement.tsx(283,29): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(284,27): error TS2339: Property 'cancerType' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(285,49): error TS2339: Property 'question' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(286,27): error TS2339: Property 'options' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(287,27): error TS2339: Property 'options' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(287,40): error TS2339: Property 'answer' does not exist on type 'never'.
+src/features/admin/pages/QuizManagement.tsx(290,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/QuizManagement.tsx(297,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => Promise<void>; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/QuizManagement.tsx(298,56): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/admin/pages/ScreeningCenterManagement.tsx(2,21): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(41,16): error TS2345: Argument of type '"Failed to load screening centers"' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(48,29): error TS7006: Parameter 'field' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(48,36): error TS7006: Parameter 'value' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(60,9): error TS6133: 'handleServiceChange' is declared but its value is never read.
+src/features/admin/pages/ScreeningCenterManagement.tsx(60,32): error TS7006: Parameter 'service' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(60,41): error TS7006: Parameter 'checked' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(61,17): error TS2345: Argument of type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: { name: any; price: number; }[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to parameter of type 'SetStateAction<{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }>'.
+  Type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: { name: any; price: number; }[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to type '(prevState: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { name: string; district: string; location: string; coordinates: { ...; }; services: never[]; contact: string; }'.
+    Call signature return types '{ services: { name: any; price: number; }[]; name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; contact: string; }' and '{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }' are incompatible.
+      The types of 'services' are incompatible between these types.
+        Type '{ name: any; price: number; }[]' is not assignable to type 'never[]'.
+          Type '{ name: any; price: number; }' is not assignable to type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(65,46): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(66,48): error TS2345: Argument of type 'number' is not assignable to parameter of type 'string'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(68,41): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(72,37): error TS7006: Parameter 'serviceName' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(72,50): error TS7006: Parameter 'price' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(74,17): error TS2345: Argument of type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: any[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to parameter of type 'SetStateAction<{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }>'.
+  Type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: any[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to type '(prevState: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { name: string; district: string; location: string; coordinates: { ...; }; services: never[]; contact: string; }'.
+    Call signature return types '{ services: any[]; name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; contact: string; }' and '{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }' are incompatible.
+      The types of 'services' are incompatible between these types.
+        Type 'any[]' is not assignable to type 'never[]'.
+          Type 'any' is not assignable to type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(77,11): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(77,36): error TS2698: Spread types may only be created from object types.
+src/features/admin/pages/ScreeningCenterManagement.tsx(82,36): error TS7006: Parameter 'serviceName' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(82,49): error TS7006: Parameter 'isFree' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(83,17): error TS2345: Argument of type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: any[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to parameter of type 'SetStateAction<{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }>'.
+  Type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: any[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to type '(prevState: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { name: string; district: string; location: string; coordinates: { ...; }; services: never[]; contact: string; }'.
+    Call signature return types '{ services: any[]; name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; contact: string; }' and '{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }' are incompatible.
+      The types of 'services' are incompatible between these types.
+        Type 'any[]' is not assignable to type 'never[]'.
+          Type 'any' is not assignable to type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(86,11): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(87,15): error TS2698: Spread types may only be created from object types.
+src/features/admin/pages/ScreeningCenterManagement.tsx(87,43): error TS2339: Property 'price' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(87,64): error TS2339: Property 'price' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(93,23): error TS7006: Parameter 'serviceName' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(94,57): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(95,19): error TS2345: Argument of type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: { name: any; price: number; }[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to parameter of type 'SetStateAction<{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }>'.
+  Type '(prev: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { services: { name: any; price: number; }[]; name: string; district: string; location: string; coordinates: { ...; }; contact: string; }' is not assignable to type '(prevState: { name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }) => { name: string; district: string; location: string; coordinates: { ...; }; services: never[]; contact: string; }'.
+    Call signature return types '{ services: { name: any; price: number; }[]; name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; contact: string; }' and '{ name: string; district: string; location: string; coordinates: { lat: string; lng: string; }; services: never[]; contact: string; }' are incompatible.
+      The types of 'services' are incompatible between these types.
+        Type '{ name: any; price: number; }[]' is not assignable to type 'never[]'.
+          Type '{ name: any; price: number; }' is not assignable to type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(102,26): error TS7006: Parameter 'serviceName' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(105,47): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(109,31): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(122,55): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(136,23): error TS7006: Parameter 'center' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(152,31): error TS7006: Parameter 'id' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(198,10): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(295,56): error TS6133: 'index' is declared but its value is never read.
+src/features/admin/pages/ScreeningCenterManagement.tsx(296,42): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(297,40): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(301,46): error TS2339: Property 'price' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(304,43): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(310,49): error TS2339: Property 'price' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(317,48): error TS2339: Property 'price' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(320,43): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(329,68): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(344,62): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(356,27): error TS2531: Object is possibly 'null'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(356,71): error TS2339: Property 'value' does not exist on type 'HTMLElement'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(363,62): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(384,18): error TS2739: Type '{ children: string; type: string; variant: string; }' is missing the following properties from type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }': onClick, ariaLabel
+src/features/admin/pages/ScreeningCenterManagement.tsx(387,18): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; type: string; onClick: () => void; variant: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(418,31): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(419,29): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(420,29): error TS2339: Property 'district' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(421,51): error TS2339: Property 'location' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(423,27): error TS2339: Property 'coordinates' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(424,27): error TS2339: Property 'coordinates' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(428,29): error TS2339: Property 'services' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(428,44): error TS7006: Parameter 'service' implicitly has an 'any' type.
+src/features/admin/pages/ScreeningCenterManagement.tsx(436,29): error TS2339: Property 'contact' does not exist on type 'never'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(439,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => void; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(446,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => Promise<void>; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/ScreeningCenterManagement.tsx(447,58): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/admin/pages/UserManagement.tsx(2,21): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/admin/pages/UserManagement.tsx(24,16): error TS2345: Argument of type '"Failed to load users"' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/admin/pages/UserManagement.tsx(31,41): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+src/features/admin/pages/UserManagement.tsx(31,49): error TS7006: Parameter 'isActive' implicitly has an 'any' type.
+src/features/admin/pages/UserManagement.tsx(36,9): error TS2345: Argument of type 'any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type 'any[]' is not assignable to type 'never[]'.
+    Type 'any' is not assignable to type 'never'.
+src/features/admin/pages/UserManagement.tsx(37,16): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(37,35): error TS2698: Spread types may only be created from object types.
+src/features/admin/pages/UserManagement.tsx(46,39): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+src/features/admin/pages/UserManagement.tsx(46,47): error TS7006: Parameter 'isAdmin' implicitly has an 'any' type.
+src/features/admin/pages/UserManagement.tsx(59,9): error TS2345: Argument of type 'any[]' is not assignable to parameter of type 'SetStateAction<never[]>'.
+  Type 'any[]' is not assignable to type 'never[]'.
+    Type 'any' is not assignable to type 'never'.
+src/features/admin/pages/UserManagement.tsx(59,35): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(59,54): error TS2698: Spread types may only be created from object types.
+src/features/admin/pages/UserManagement.tsx(67,35): error TS7006: Parameter 'userId' implicitly has an 'any' type.
+src/features/admin/pages/UserManagement.tsx(74,44): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(83,12): error TS2339: Property 'email' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(84,13): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(84,26): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(88,36): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(89,39): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(90,35): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(140,44): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(146,47): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(152,44): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(171,29): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(172,27): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(173,27): error TS2339: Property 'email' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(176,51): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(178,27): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(184,28): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(187,27): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(190,36): error TS2339: Property 'createdAt' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(193,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => Promise<void>; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/UserManagement.tsx(195,53): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(195,64): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(197,37): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(200,29): error TS2339: Property 'isActive' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(202,22): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => Promise<void>; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/UserManagement.tsx(204,51): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(204,62): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(206,37): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(209,29): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(211,28): error TS2339: Property 'isAdmin' does not exist on type 'never'.
+src/features/admin/pages/UserManagement.tsx(212,24): error TS2741: Property 'ariaLabel' is missing in type '{ children: string; onClick: () => Promise<void>; variant: string; size: string; }' but required in type '{ [x: string]: any; children: any; onClick: any; variant?: string | undefined; size?: string | undefined; className?: string | undefined; ariaLabel: any; }'.
+src/features/admin/pages/UserManagement.tsx(213,62): error TS2339: Property '_id' does not exist on type 'never'.
+src/features/analytics/Analytics.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/features/analytics/Analytics.tsx(26,35): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/features/analytics/Analytics.tsx(26,41): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/analytics/Analytics.tsx(50,31): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/features/analytics/Analytics.tsx(50,37): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/auth/Login.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/auth/Login.tsx(10,11): error TS2339: Property 'login' does not exist on type 'unknown'.
+src/features/auth/Login.tsx(13,30): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/features/auth/Signup.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/auth/Signup.tsx(13,11): error TS2339: Property 'signup' does not exist on type 'unknown'.
+src/features/auth/Signup.tsx(16,31): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/features/awareness-hub/pages/AwarenessHome.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/features/awareness-hub/pages/ChatScreen.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/awareness-hub/pages/ChatScreen.tsx(10,29): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/awareness-hub/pages/ChatScreen.tsx(16,11): error TS2339: Property 'user' does not exist on type 'unknown'.
+src/features/awareness-hub/pages/ChatScreen.tsx(32,22): error TS18048: 'lastDoctorMsg.options.length' is possibly 'undefined'.
+src/features/awareness-hub/pages/ChatScreen.tsx(109,11): error TS2322: Type '{ title: any; onBack: () => void; className: string; }' is not assignable to type 'IntrinsicAttributes & { title: any; onBack: any; }'.
+  Property 'className' does not exist on type 'IntrinsicAttributes & { title: any; onBack: any; }'.
+src/features/awareness-hub/pages/LanguageSelect.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/awareness-hub/pages/LanguageSelect.tsx(45,46): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/awareness-hub/pages/LanguageSelect.tsx(50,33): error TS2345: Argument of type 'string' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/awareness-hub/pages/Quiz.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/awareness-hub/pages/Quiz.tsx(26,32): error TS7031: Binding element 'cancerType' implicitly has an 'any' type.
+src/features/awareness-hub/pages/Quiz.tsx(26,44): error TS7031: Binding element 'onComplete' implicitly has an 'any' type.
+src/features/awareness-hub/pages/Quiz.tsx(32,21): error TS7053: Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ breast: { question: string; options: string[]; answer: number; }[]; cervical: { question: string; options: string[]; answer: number; }[]; }'.
+src/features/awareness-hub/pages/Quiz.tsx(35,25): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/awareness-hub/pages/Quiz.tsx(71,32): error TS7006: Parameter 'option' implicitly has an 'any' type.
+src/features/awareness-hub/pages/Quiz.tsx(71,40): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(1,8): error TS6133: 'React' is declared but its value is never read.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(4,15): error TS7016: Could not find a declaration file for module 'leaflet'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/node_modules/leaflet/dist/leaflet-src.js' implicitly has an 'any' type.
+  Try `npm i --save-dev @types/leaflet` if it exists or add a new declaration (.d.ts) file containing `declare module 'leaflet';`
+src/features/awareness-hub/pages/ScreeningLocator.tsx(6,30): error TS7016: Could not find a declaration file for module '../../../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(44,18): error TS2345: Argument of type '"Failed to load screening centers. Please try again."' is not assignable to parameter of type 'SetStateAction<null>'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(55,45): error TS2339: Property 'district' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(143,24): error TS2339: Property 'id' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(147,22): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(149,62): error TS2339: Property 'location' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(153,24): error TS2339: Property 'services' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(153,38): error TS7006: Parameter 's' implicitly has an 'any' type.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(164,48): error TS2339: Property 'contact' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(186,15): error TS2322: Type '{ children: (Element | Element[])[]; center: number[]; zoom: number; style: { height: string; width: string; }; }' is not assignable to type 'IntrinsicAttributes & MapContainerProps & RefAttributes<LeafletMap>'.
+  Property 'center' does not exist on type 'IntrinsicAttributes & MapContainerProps & RefAttributes<LeafletMap>'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(193,26): error TS2339: Property 'id' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(194,32): error TS2339: Property 'coordinates' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(194,51): error TS2339: Property 'coordinates' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(197,32): error TS2339: Property 'name' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(198,47): error TS2339: Property 'location' does not exist on type 'never'.
+src/features/awareness-hub/pages/ScreeningLocator.tsx(199,47): error TS2339: Property 'contact' does not exist on type 'never'.
+src/features/welcome/WelcomeScreen.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/hooks/useChatFlow.ts(2,30): error TS7016: Could not find a declaration file for module '../services/api'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/api.js' implicitly has an 'any' type.
+src/hooks/useChatFlow.ts(3,29): error TS7016: Could not find a declaration file for module '../services/storage'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/services/storage.js' implicitly has an 'any' type.
+src/main.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/main.tsx(5,1): error TS6133: 'images' is declared but its value is never read.
+src/main.tsx(7,12): error TS2345: Argument of type 'HTMLElement | null' is not assignable to parameter of type 'Container'.
+  Type 'null' is not assignable to type 'Container'.
+src/routes/AppRoutes.tsx(1,1): error TS6133: 'React' is declared but its value is never read.
+src/routes/AppRoutes.tsx(16,8): error TS7016: Could not find a declaration file for module '../features/admin'. 'C:/Users/School/Desktop/Programming/Wekebeze/wekebeze-cancer-awareness/frontend/src/features/admin/index.js' implicitly has an 'any' type.
+src/routes/AppRoutes.tsx(20,23): error TS7031: Binding element 'children' implicitly has an 'any' type.
+src/routes/AppRoutes.tsx(21,11): error TS2339: Property 'user' does not exist on type 'unknown'.
+src/routes/AppRoutes.tsx(21,17): error TS2339: Property 'isAdmin' does not exist on type 'unknown'.
+src/routes/AppRoutes.tsx(21,26): error TS2339: Property 'loading' does not exist on type 'unknown'.

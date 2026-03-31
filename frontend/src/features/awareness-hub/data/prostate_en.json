@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "id": "awareness_question",
+      "start": true,
+      "text": "Have you heard about Prostate Cancer?",
+      "options": [
+        { "text": "Yes", "next": "heard_yes" },
+        { "text": "No", "next": "heard_no" }
+      ]
+    },
+    {
+      "id": "heard_yes",
+      "text": "Great! Since you're already familiar with Prostate Cancer, let's dive deeper into some key aspects. Here's an infographic to refresh your knowledge.",
+      "image": "prostate.jpg",
+      "options": [
+        { "text": "What are the signs and symptoms?", "next": "signs" },
+        { "text": "How can I screen for it?", "next": "screening" },
+        { "text": "What are the risk factors?", "next": "risk_factors" },
+        { "text": "Tell me about treatment options", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "heard_no",
+      "text": "No problem at all! Prostate Cancer is an important topic to learn about. Let me share some essential information to help you understand it better. Here's an infographic to get started.",
+      "image": "prostate.jpg",
+      "options": [
+        { "text": "What are the signs and symptoms?", "next": "signs" },
+        { "text": "How can I screen for it?", "next": "screening" },
+        { "text": "What are the risk factors?", "next": "risk_factors" },
+        { "text": "Tell me about treatment options", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "signs",
+      "text": "As a doctor, I advise that common signs and symptoms of prostate cancer may include frequent urination, weak or interrupted urine flow, blood in urine or semen, pain in the back, hips, or pelvis, and erectile dysfunction. However, these symptoms can also be caused by benign conditions, so professional evaluation is essential.",
+      "image": "prostate.jpg",
+      "options": [
+        {
+          "text": "How can I monitor my prostate health?",
+          "next": "self_check"
+        },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "self_check",
+      "text": "While there's no standard self-examination for prostate cancer like breast self-exams, being aware of urinary changes and maintaining regular check-ups is important. Men over 50 should discuss prostate screening with their doctor. Early detection through PSA testing and digital rectal exams can be life-saving.",
+      "options": [
+        { "text": "Where can I get screened?", "next": "resources" },
+        { "text": "Go back", "next": "signs" }
+      ]
+    },
+    {
+      "id": "risk_factors",
+      "text": "Risk factors for prostate cancer include older age, family history, African ancestry, and certain genetic factors. Lifestyle factors like diet high in red meat and low in vegetables may also play a role. Regular screening is particularly important for men with these risk factors.",
+      "options": [
+        { "text": "How can I reduce my risk?", "next": "prevention" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "prevention",
+      "text": "Prevention strategies include maintaining a healthy diet rich in fruits and vegetables, regular exercise, maintaining a healthy weight, and avoiding smoking. Regular screening starting at age 45-50 (earlier for high-risk groups) is the best way to detect prostate cancer early when it's most treatable.",
+      "options": [
+        { "text": "Tell me more about screening", "next": "screening" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "screening",
+      "text": "Screening for prostate cancer typically involves PSA (prostate-specific antigen) blood test and digital rectal examination (DRE). The recommended starting age is 45-50, with frequency depending on individual risk factors. Discuss with your doctor to determine the best screening schedule for you.",
+      "options": [
+        { "text": "Where can I get screened?", "next": "resources" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "treatment",
+      "text": "Treatment for prostate cancer depends on the stage, grade, and your overall health. Options may include active surveillance for low-risk cases, surgery (prostatectomy), radiation therapy, hormone therapy, chemotherapy, or immunotherapy. Treatment plans are highly individualized.",
+      "options": [
+        { "text": "What about side effects and support?", "next": "support" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "support",
+      "text": "Managing treatment side effects like urinary incontinence or erectile dysfunction is important. Support can include counseling, support groups, pelvic floor exercises, and medications. Many cancer centers offer specialized prostate cancer support programs and survivorship care.",
+      "options": [
+        {
+          "text": "Where can I find resources and clinics?",
+          "next": "resources"
+        },
+        { "text": "Go back", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "resources",
+      "text": "For screening, treatment, and support, contact your nearest health center, hospital, or urology clinic. Organizations like local cancer societies, men's health programs, and community health initiatives often provide prostate cancer screening, education, and support services.",
+      "options": [{ "text": "Back to start", "next": "welcome" }]
+    }
+  ]
+}

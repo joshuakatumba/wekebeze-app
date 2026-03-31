@@ -1,0 +1,16 @@
+import React from "react";
+export default function LoadingSpinner() {
+  return (
+    <div
+      className="flex items-center justify-center p-4"
+      role="status"
+      aria-label="Loading"
+    >
+      <div
+        className="w-8 h-8 rounded-full border-4 border-t-primary-500 border-gray-200 animate-spin"
+        aria-hidden="true"
+      ></div>
+      <span className="sr-only">Loading</span>
+    </div>
+  );
+}

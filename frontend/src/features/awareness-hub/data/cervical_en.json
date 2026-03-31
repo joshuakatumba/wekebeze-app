@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "awareness_question",
+      "start": true,
+      "text": "Have you heard about Cervical Cancer?",
+      "options": [
+        { "text": "Yes", "next": "heard_yes" },
+        { "text": "No", "next": "heard_no" }
+      ]
+    },
+    {
+      "id": "heard_yes",
+      "text": "Excellent! Since you're familiar with Cervical Cancer, let's explore some key details. Here's an infographic to enhance your understanding.",
+      "image": "cervical.jpg",
+      "options": [
+        { "text": "What are the symptoms?", "next": "symptoms" },
+        { "text": "How can I prevent it?", "next": "prevention" },
+        { "text": "What are the risk factors?", "next": "risk_factors" },
+        { "text": "Tell me about screening", "next": "screening" }
+      ]
+    },
+    {
+      "id": "heard_no",
+      "text": "That's completely fine! Cervical Cancer is something everyone should know about. Let me provide you with important information to get started. Here's an infographic to introduce the topic.",
+      "image": "cervical.jpg",
+      "options": [
+        { "text": "What are the symptoms?", "next": "symptoms" },
+        { "text": "How can I prevent it?", "next": "prevention" },
+        { "text": "What are the risk factors?", "next": "risk_factors" },
+        { "text": "Tell me about screening", "next": "screening" }
+      ]
+    },
+    {
+      "id": "symptoms",
+      "text": "As a doctor, I can tell you that common symptoms of cervical cancer include unusual vaginal bleeding (such as after sex, between periods, or after menopause), pelvic pain, or unusual discharge. However, early stages often have no symptoms, which is why regular screening is so important.",
+      "options": [
+        { "text": "What causes cervical cancer?", "next": "causes" },
+        { "text": "How is it checked?", "next": "screening" },
+        { "text": "Go back", "next": "awareness_question" }
+      ]
+    },
+    {
+      "id": "causes",
+      "text": "Most cervical cancers are caused by persistent infection with high-risk human papillomavirus (HPV). While other factors can increase risk, HPV is the primary cause. Vaccination and screening can help prevent this.",
+      "options": [
+        { "text": "Tell me about risk factors", "next": "risk_factors" },
+        { "text": "Go back", "next": "symptoms" }
+      ]
+    },
+    {
+      "id": "risk_factors",
+      "text": "Risk factors for cervical cancer include early sexual activity, having many sexual partners, smoking, a weakened immune system, and not getting regular screening. Being aware of these can help you take preventive steps.",
+      "options": [
+        { "text": "How can I prevent it?", "next": "prevention" },
+        { "text": "Go back", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "prevention",
+      "text": "Prevention of cervical cancer includes getting the HPV vaccine (recommended for adolescents), practicing safe sex, not smoking, and undergoing regular screening like Pap smears or HPV tests. These measures can significantly reduce your risk.",
+      "options": [
+        { "text": "Where can I get vaccinated?", "next": "resources" },
+        { "text": "Tell me more about screening", "next": "screening" },
+        { "text": "Go back", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "screening",
+      "text": "Screening for cervical cancer detects changes in cervical cells before they become cancerous. Tests include Pap smears and HPV testing. Consult your clinic to see what's available and recommended for you.",
+      "options": [
+        {
+          "text": "How often should I get screened?",
+          "next": "screening_frequency"
+        },
+        { "text": "Go back", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "screening_frequency",
+      "text": "Screening frequency depends on your age, risk factors, and local guidelines. Many programs recommend starting in your 20s or 30s and repeating every 3-5 years. Always check with your healthcare provider for personalized advice.",
+      "options": [
+        { "text": "Where can I get screened?", "next": "resources" },
+        { "text": "Go back", "next": "screening" }
+      ]
+    },
+    {
+      "id": "treatment",
+      "text": "Treatment for cervical cancer depends on the stage. Early changes can be treated with minor procedures, while advanced cancer may require surgery, radiation therapy, or chemotherapy. Your oncologist will create an individualized plan.",
+      "options": [
+        { "text": "What about support for side effects?", "next": "support" },
+        { "text": "Go back", "next": "welcome" }
+      ]
+    },
+    {
+      "id": "support",
+      "text": "During treatment, support services like counseling, support groups, and assistance with practical needs can be very helpful. Many hospitals and organizations provide these to help with emotional and physical recovery.",
+      "options": [
+        {
+          "text": "Where can I find resources and clinics?",
+          "next": "resources"
+        },
+        { "text": "Go back", "next": "treatment" }
+      ]
+    },
+    {
+      "id": "resources",
+      "text": "For screening, vaccination, and treatment, visit your nearest public health clinic or hospital. Numerous NGOs offer free or low-cost services, awareness programs, and support. Don't hesitate to reach out for help.",
+      "options": [{ "text": "Back to start", "next": "welcome" }]
+    }
+  ]
+}
