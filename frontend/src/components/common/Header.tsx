@@ -3,6 +3,51 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 import Button from "./Button";
 
+// Professional SVG Icons
+const Icons = {
+  Home: () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <polyline points="9 22 9 12 15 12 15 22" />
+    </svg>
+  ),
+  Locator: () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a7 7 0 0 1 14 0z" />
+      <circle cx="12" cy="10" r="3" />
+    </svg>
+  ),
+  Dashboard: () => (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="7" height="7" />
+      <rect x="14" y="3" width="7" height="7" />
+      <rect x="14" y="14" width="7" height="7" />
+      <rect x="3" y="14" width="7" height="7" />
+    </svg>
+  ),
+  Logout: () => (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+      <polyline points="16 17 21 12 16 7" />
+      <line x1="21" y1="12" x2="9" y2="12" />
+    </svg>
+  ),
+  Login: () => (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+      <polyline points="10 17 15 12 10 7" />
+      <line x1="15" y1="12" x2="3" y2="12" />
+    </svg>
+  ),
+  Menu: () => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <line x1="3" y1="18" x2="21" y2="18" />
+    </svg>
+  ),
+};
+
 interface ProfileDropdownProps {
   user: any;
   isAdmin: () => boolean;
@@ -169,7 +214,7 @@ const ProfileDropdown = ({ user, isAdmin, isAdminRoute, onLogout, navigate }: Pr
               onMouseEnter={e => (e.currentTarget.style.background = "#fdf2f8")}
               onMouseLeave={e => (e.currentTarget.style.background = "none")}
             >
-              <span>🏠</span> Home
+              <Icons.Home /> Home
             </button>
             <button
               onClick={() => { navigate("/screening-locator"); setIsOpen(false); }}
@@ -177,7 +222,7 @@ const ProfileDropdown = ({ user, isAdmin, isAdminRoute, onLogout, navigate }: Pr
               onMouseEnter={e => (e.currentTarget.style.background = "#fdf2f8")}
               onMouseLeave={e => (e.currentTarget.style.background = "none")}
             >
-              <span>🏥</span> Screening Locator
+              <Icons.Locator /> Screening Locator
             </button>
             {isAdmin() && (
               <button
@@ -186,7 +231,7 @@ const ProfileDropdown = ({ user, isAdmin, isAdminRoute, onLogout, navigate }: Pr
                 onMouseEnter={e => (e.currentTarget.style.background = "#fdf2f8")}
                 onMouseLeave={e => (e.currentTarget.style.background = "none")}
               >
-                <span>📊</span> Admin Panel
+                <Icons.Dashboard /> Admin Panel
               </button>
             )}
 
@@ -200,7 +245,7 @@ const ProfileDropdown = ({ user, isAdmin, isAdminRoute, onLogout, navigate }: Pr
                 onMouseEnter={e => (e.currentTarget.style.background = "#fef2f2")}
                 onMouseLeave={e => (e.currentTarget.style.background = "none")}
               >
-                <span>⏻</span> Logout
+                <Icons.Logout /> Logout
               </button>
             ) : (
               <button
@@ -209,7 +254,7 @@ const ProfileDropdown = ({ user, isAdmin, isAdminRoute, onLogout, navigate }: Pr
                 onMouseEnter={e => (e.currentTarget.style.background = "#fdf2f8")}
                 onMouseLeave={e => (e.currentTarget.style.background = "none")}
               >
-                <span>🔑</span> Login
+                <Icons.Login /> Login
               </button>
             )}
           </div>
@@ -348,7 +393,7 @@ const Header = () => {
               className="md:hidden text-gray-700 hover:text-pink-500"
               onClick={() => setAdminOpen(!adminOpen)}
             >
-              ☰
+              <Icons.Menu />
             </button>
           </div>
         </div>
