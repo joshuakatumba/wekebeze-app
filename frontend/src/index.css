@@ -60,3 +60,11 @@
 .chat-inner {
   @apply bg-white rounded-3xl shadow-premium h-full border border-primary-50;
 }
+
+/* Animation Delays */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+.animation-delay-4000 {
+  animation-delay: 4s;
+}

@@ -14,7 +14,7 @@ const Header = () => {
     navigate("/");
   };
 
-  const isActiveRoute = (path) => location.pathname === path;
+  const isActiveRoute = (path: string) => location.pathname === path;
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
@@ -30,84 +30,78 @@ const Header = () => {
             </button>
 
             {/* Desktop Navigation */}
-            {user && (
-              <nav className="hidden md:flex items-center space-x-6">
-                <button
-                  onClick={() => navigate("/home")}
-                  className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/home") ? "text-pink-500" : ""
-                  }`}
-                >
-                  Home
-                </button>
-                <button
-                  onClick={() => navigate("/screening-locator")}
-                  className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/screening-locator")
-                      ? "text-pink-500"
-                      : ""
-                  }`}
-                >
-                  Screening Locator
-                </button>
+            <nav className="hidden md:flex items-center space-x-6">
+              <button
+                onClick={() => navigate("/home")}
+                className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/home") ? "text-pink-500" : ""
+                }`}
+              >
+                Home
+              </button>
+              <button
+                onClick={() => navigate("/screening-locator")}
+                className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/screening-locator") ? "text-pink-500" : ""
+                }`}
+              >
+                Screening Locator
+              </button>
 
-                {/* Admin Links */}
-                {isAdmin() && (
-                  <div className="flex flex-wrap items-center space-x-3 border-l border-gray-300 pl-4 ml-4">
-                    <button
-                      onClick={() => navigate("/admin")}
-                      className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
-                        isActiveRoute("/admin")
-                          ? "bg-pink-50 text-pink-500"
-                          : "text-gray-700 hover:text-pink-500"
-                      }`}
-                    >
-                      Dashboard
-                    </button>
-                    <button
-                      onClick={() => navigate("/admin/users")}
-                      className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
-                        isActiveRoute("/admin/users")
-                          ? "bg-pink-50 text-pink-500"
-                          : "text-gray-700 hover:text-pink-500"
-                      }`}
-                    >
-                      Users
-                    </button>
-                    <button
-                      onClick={() => navigate("/admin/analytics")}
-                      className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
-                        isActiveRoute("/admin/analytics")
-                          ? "bg-pink-50 text-pink-500"
-                          : "text-gray-700 hover:text-pink-500"
-                      }`}
-                    >
-                      Analytics
-                    </button>
-                    <button
-                      onClick={() => navigate("/admin/chat-nodes")}
-                      className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
-                        isActiveRoute("/admin/chat-nodes")
-                          ? "bg-pink-50 text-pink-500"
-                          : "text-gray-700 hover:text-pink-500"
-                      }`}
-                    >
-                      Chat Mgmt
-                    </button>
-                    <button
-                      onClick={() => navigate("/admin/screening-centers")}
-                      className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
-                        isActiveRoute("/admin/screening-centers")
-                          ? "bg-pink-50 text-pink-500"
-                          : "text-gray-700 hover:text-pink-500"
-                      }`}
-                    >
-                      Screening Centers
-                    </button>
-                  </div>
-                )}
-              </nav>
-            )}
+              {/* Admin Links (Public) */}
+              <div className="flex flex-wrap items-center space-x-3 border-l border-gray-300 pl-4 ml-4">
+                <button
+                  onClick={() => navigate("/admin")}
+                  className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
+                    isActiveRoute("/admin")
+                      ? "bg-pink-50 text-pink-500"
+                      : "text-gray-700 hover:text-pink-500"
+                  }`}
+                >
+                  Dashboard
+                </button>
+                <button
+                  onClick={() => navigate("/admin/users")}
+                  className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
+                    isActiveRoute("/admin/users")
+                      ? "bg-pink-50 text-pink-500"
+                      : "text-gray-700 hover:text-pink-500"
+                  }`}
+                >
+                  Users
+                </button>
+                <button
+                  onClick={() => navigate("/admin/analytics")}
+                  className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
+                    isActiveRoute("/admin/analytics")
+                      ? "bg-pink-50 text-pink-500"
+                      : "text-gray-700 hover:text-pink-500"
+                  }`}
+                >
+                  Analytics
+                </button>
+                <button
+                  onClick={() => navigate("/admin/chat-nodes")}
+                  className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
+                    isActiveRoute("/admin/chat-nodes")
+                      ? "bg-pink-50 text-pink-500"
+                      : "text-gray-700 hover:text-pink-500"
+                  }`}
+                >
+                  Chat Mgmt
+                </button>
+                <button
+                  onClick={() => navigate("/admin/screening-centers")}
+                  className={`px-3 py-1 text-sm font-semibold rounded-md hover:bg-pink-50 transition ${
+                    isActiveRoute("/admin/screening-centers")
+                      ? "bg-pink-50 text-pink-500"
+                      : "text-gray-700 hover:text-pink-500"
+                  }`}
+                >
+                  Screening Centers
+                </button>
+              </div>
+            </nav>
           </div>
 
           {/* User Actions */}
@@ -122,11 +116,7 @@ const Header = () => {
                     </span>
                   )}
                 </span>
-                <Button
-                  onClick={handleLogout}
-                  variant="secondary"
-                  size="small"
-                >
+                <Button onClick={handleLogout} variant="secondary" size="small">
                   Logout
                 </Button>
               </>
@@ -150,19 +140,17 @@ const Header = () => {
             )}
 
             {/* Mobile menu toggle */}
-            {user && (
-              <button
-                className="md:hidden text-gray-700 hover:text-pink-500"
-                onClick={() => setAdminOpen(!adminOpen)}
-              >
-                ☰
-              </button>
-            )}
+            <button
+              className="md:hidden text-gray-700 hover:text-pink-500"
+              onClick={() => setAdminOpen(!adminOpen)}
+            >
+              ☰
+            </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        {user && adminOpen && (
+        {adminOpen && (
           <div className="md:hidden border-t border-gray-200 py-3 space-y-2 px-2">
             <button
               onClick={() => navigate("/home")}
@@ -182,55 +170,53 @@ const Header = () => {
             </button>
 
             {/* Admin Links */}
-            {isAdmin() && (
-              <div className="border-t border-gray-200 pt-2 mt-2 space-y-1">
-                <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">
-                  Admin Panel
-                </div>
-                <button
-                  onClick={() => navigate("/admin")}
-                  className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/admin") ? "text-pink-500" : ""
-                  }`}
-                >
-                  Dashboard
-                </button>
-                <button
-                  onClick={() => navigate("/admin/users")}
-                  className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/admin/users") ? "text-pink-500" : ""
-                  }`}
-                >
-                  Users
-                </button>
-                <button
-                  onClick={() => navigate("/admin/analytics")}
-                  className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/admin/analytics") ? "text-pink-500" : ""
-                  }`}
-                >
-                  Analytics
-                </button>
-                <button
-                  onClick={() => navigate("/admin/chat-nodes")}
-                  className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/admin/chat-nodes") ? "text-pink-500" : ""
-                  }`}
-                >
-                  Chat Mgmt
-                </button>
-                <button
-                  onClick={() => navigate("/admin/screening-centers")}
-                  className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                    isActiveRoute("/admin/screening-centers")
-                      ? "text-pink-500"
-                      : ""
-                  }`}
-                >
-                  Screening Centers
-                </button>
+            <div className="border-t border-gray-200 pt-2 mt-2 space-y-1">
+              <div className="text-xs text-gray-500 uppercase tracking-wide mb-1">
+                Admin Panel
               </div>
-            )}
+              <button
+                onClick={() => navigate("/admin")}
+                className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/admin") ? "text-pink-500" : ""
+                }`}
+              >
+                Dashboard
+              </button>
+              <button
+                onClick={() => navigate("/admin/users")}
+                className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/admin/users") ? "text-pink-500" : ""
+                }`}
+              >
+                Users
+              </button>
+              <button
+                onClick={() => navigate("/admin/analytics")}
+                className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/admin/analytics") ? "text-pink-500" : ""
+                }`}
+              >
+                Analytics
+              </button>
+              <button
+                onClick={() => navigate("/admin/chat-nodes")}
+                className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/admin/chat-nodes") ? "text-pink-500" : ""
+                }`}
+              >
+                Chat Mgmt
+              </button>
+              <button
+                onClick={() => navigate("/admin/screening-centers")}
+                className={`block w-full text-left px-2 py-2 text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                  isActiveRoute("/admin/screening-centers")
+                    ? "text-pink-500"
+                    : ""
+                }`}
+              >
+                Screening Centers
+              </button>
+            </div>
           </div>
         )}
       </div>

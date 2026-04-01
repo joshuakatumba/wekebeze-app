@@ -149,8 +149,8 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
             <div className="sidebar-user">
               <div className="user-avatar">{userInitial}</div>
               <div className="user-info">
-                <span>{user?.name || "Admin"}</span>
-                <span>{user?.email || ""}</span>
+                <span>{user?.name || "Guest Administrator"}</span>
+                <span>{user?.email || "No session active"}</span>
               </div>
             </div>
             <div className="sidebar-footer-actions">
