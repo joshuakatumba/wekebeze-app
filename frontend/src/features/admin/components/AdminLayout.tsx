@@ -131,7 +131,7 @@ const navItems = [
   { path: "/admin", label: "Dashboard", Icon: Icons.Dashboard, section: "overview", end: true },
   { path: "/admin/analytics", label: "Analytics", Icon: Icons.Analytics, section: "overview" },
   { path: "/admin/users", label: "Users", Icon: Icons.Users, section: "management" },
-  { path: "/admin/chat-nodes", label: "Chat Nodes", Icon: Icons.Chat, section: "content" },
+  { path: "/admin/chat-nodes", label: "Chat Mgmt", Icon: Icons.Chat, section: "content" },
   { path: "/admin/screening-centers", label: "Screening Centers", Icon: Icons.Centers, section: "content" },
   { path: "/admin/quizzes", label: "Quizzes", Icon: Icons.Quizzes, section: "content" },
 ];
