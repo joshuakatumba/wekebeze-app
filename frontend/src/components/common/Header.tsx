@@ -285,32 +285,36 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo / Brand */}
           <div className="flex items-center space-x-6">
-            <button
-              onClick={() => navigate("/")}
-              className="text-xl font-bold text-pink-500 hover:text-pink-600 transition-colors"
-            >
-              Wekebeze
-            </button>
+            {!isAdminRoute && (
+              <>
+                <button
+                  onClick={() => navigate("/")}
+                  className="text-xl font-bold text-pink-500 hover:text-pink-600 transition-colors"
+                >
+                  Wekebeze
+                </button>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6">
-              <button
-                onClick={() => navigate("/home")}
-                className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                  isActiveRoute("/home") ? "text-pink-500" : ""
-                }`}
-              >
-                Home
-              </button>
-              <button
-                onClick={() => navigate("/screening-locator")}
-                className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
-                  isActiveRoute("/screening-locator") ? "text-pink-500" : ""
-                }`}
-              >
-                Screening Locator
-              </button>
-            </nav>
+                {/* Desktop Navigation */}
+                <nav className="hidden md:flex items-center space-x-6">
+                  <button
+                    onClick={() => navigate("/home")}
+                    className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                      isActiveRoute("/home") ? "text-pink-500" : ""
+                    }`}
+                  >
+                    Home
+                  </button>
+                  <button
+                    onClick={() => navigate("/screening-locator")}
+                    className={`text-gray-700 hover:text-pink-500 transition-colors font-medium ${
+                      isActiveRoute("/screening-locator") ? "text-pink-500" : ""
+                    }`}
+                  >
+                    Screening Locator
+                  </button>
+                </nav>
+              </>
+            )}
           </div>
 
           {/* User Actions */}
@@ -335,17 +339,19 @@ const Header = () => {
             )}
 
             {/* Mobile menu toggle */}
-            <button
-              className="md:hidden text-gray-700 hover:text-pink-500"
-              onClick={() => setAdminOpen(!adminOpen)}
-            >
-              <Icons.Menu />
-            </button>
+            {!isAdminRoute && (
+              <button
+                className="md:hidden text-gray-700 hover:text-pink-500"
+                onClick={() => setAdminOpen(!adminOpen)}
+              >
+                <Icons.Menu />
+              </button>
+            )}
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        {adminOpen && (
+        {adminOpen && !isAdminRoute && (
           <div className="md:hidden border-t border-gray-200 py-3 space-y-2 px-2">
             <button
               onClick={() => navigate("/home")}
